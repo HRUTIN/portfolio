@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" fill="none">
+  <rect width="1200" height="630" fill="#060816"/>
+  <circle cx="885" cy="158" r="202" fill="#4FD1FF" fill-opacity="0.12"/>
+  <circle cx="343" cy="495" r="243" fill="#9FB5FF" fill-opacity="0.14"/>
+  <rect x="68" y="66" width="1064" height="498" rx="38" fill="white" fill-opacity="0.04" stroke="white" stroke-opacity="0.08"/>
+  <text x="110" y="228" fill="white" font-family="Segoe UI, sans-serif" font-size="72" font-weight="700">HRUTIN NAMMI</text>
+  <text x="110" y="302" fill="#9FB5FF" font-family="Segoe UI, sans-serif" font-size="34">Student Founder, AI Engineer, and Full-Stack Builder</text>
+  <text x="110" y="388" fill="#D6E4FF" font-family="Segoe UI, sans-serif" font-size="28">Premium 3D portfolio built with Next.js, Framer Motion, and Three.js.</text>
+</svg>
