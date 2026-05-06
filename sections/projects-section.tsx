@@ -90,7 +90,12 @@ export function ProjectsSection() {
                   </div>
                   <div className="mt-6 flex gap-3">
                     {project.live ? (
-                      <a href={project.live} target="_blank" rel="noreferrer" className="rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-white transition hover:border-white/20 hover:bg-white/10">
+                      <a
+                        href={project.live}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="rounded-full border border-cyan/35 bg-cyan/10 px-4 py-2 text-sm text-cyan shadow-[0_0_0_1px_rgba(56,189,248,0.12),0_0_28px_rgba(56,189,248,0.18)] transition hover:border-cyan/55 hover:bg-cyan/15 hover:text-cyan-100 hover:shadow-[0_0_0_1px_rgba(56,189,248,0.2),0_0_34px_rgba(56,189,248,0.28)]"
+                      >
                         Live Demo
                       </a>
                     ) : (
