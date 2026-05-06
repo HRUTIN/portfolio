@@ -25,7 +25,7 @@ export const siteConfig = {
   title: "Student Founder, AI Engineer, and Full-Stack Builder",
   description:
     "Premium 3D portfolio for a student founder building AI products, growth systems, and polished software end to end.",
-  url: "https://example.com",
+  url: "https://www.hrutinnammi.in",
   email: "hrutinnammi@gmail.com",
   resume: "/HRUTIN-ai-ml-resume.pdf",
   ogImage: "/og-image.svg",

@@ -22,19 +22,32 @@ const styles = {
 };
 
 export function MagneticButton({ href, children, variant = "primary", className }: ButtonProps) {
+  const isPlainAnchor =
+    href.startsWith("#") ||
+    href.startsWith("http://") ||
+    href.startsWith("https://") ||
+    href.startsWith("mailto:") ||
+    /\/[^/?]+\.[a-z0-9]+($|[?#])/i.test(href);
+
+  const sharedClassName = cn(
+    "group inline-flex items-center gap-2 rounded-full px-5 py-3 text-sm font-medium tracking-wide transition-all duration-300",
+    styles[variant],
+    className,
+  );
+
   return (
     <motion.div whileHover={{ y: -3, scale: 1.01 }} whileTap={{ scale: 0.98 }}>
-      <Link
-        href={href}
-        className={cn(
-          "group inline-flex items-center gap-2 rounded-full px-5 py-3 text-sm font-medium tracking-wide transition-all duration-300",
-          styles[variant],
-          className,
-        )}
-      >
-        <span>{children}</span>
-        <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
-      </Link>
+      {isPlainAnchor ? (
+        <a href={href} className={sharedClassName}>
+          <span>{children}</span>
+          <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
+        </a>
+      ) : (
+        <Link href={href} className={sharedClassName}>
+          <span>{children}</span>
+          <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
+        </Link>
+      )}
     </motion.div>
   );
 }
